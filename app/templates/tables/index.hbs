@@ -1,0 +1,14 @@
+Available tables
+
+<div>
+{{#each table in model}}
+	{{#link-to 'tables.table' table}}
+		<p>{{table.id}}</p>
+		{{#if table.tableFull}}
+			<img src = 'tableFull.jpeg' >
+			{{else}}
+			<img src = 'table.bmp' >
+		{{/if}}
+	{{/link-to}}
+{{/each}}
+</div>
