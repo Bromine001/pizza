@@ -1,0 +1,9 @@
+<form {{action 'save' on='submit'}}>
+	<fieldset>
+		<h2>Table {{view 'select' content=table value=model.table value='takeout'}}</h2>
+		<h2>Size {{view 'select' content=size value=model.size prompt='select a size'}}</h2>
+		{{input value=model.toppings placeholder='toppings'}}<br>
+		<h2><input type='submit' value="Save"></h2>
+		<button {{action 'cancel'}}>Cancel</button>
+	</fieldset>
+</form>

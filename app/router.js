@@ -9,7 +9,14 @@ Router.map(function() {
   this.route('tables', function() {
     this.route('table', {path: ':table_id'});
   });
-  this.route('pizzas');
+  this.route('pizzas', function() {
+    this.route('new');
+  });
+  this.route('pizza', function() {});
+
+  this.route('partials', function() {
+    this.route('-order');
+  });
 });
 
 export default Router;
