@@ -3,7 +3,7 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   size: DS.attr('string'),
-  table: DS.belongsTo('table', {async: true }),
+  table: DS.attr('string'),
   toppings: DS.attr('string')
 }).reopenClass({
 FIXTURES:

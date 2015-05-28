@@ -2,7 +2,6 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   tableFull: DS.attr('boolean'),
-  orders: DS.hasMany('pizza')
 }).reopenClass({
 	FIXTURES:
 	[
