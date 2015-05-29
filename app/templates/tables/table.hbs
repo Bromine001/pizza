@@ -1,10 +1,11 @@
-{{link-to 'Back' 'tables'}}
-	<div {{bind-attr class="model.tableFull"}} >
-	<h2>Table {{model.id}} </h2>
-	{{input type='checkbox' checked=model.tableFull class='toggle'}}
-		
-			<img src = 'table.bmp'>
-	</div>
-		<div class='orders'>
-			{{partial 'partials/order'}}
+<h2>{{link-to 'Back' 'tables'}}</h2>
+	<div class='container'>
+		<div {{bind-attr class="model.tableFull"}} >
+			<img src={{model.pic}} class='table-pic'>
+			<h2>Table {{model.id}}  <br>
+				Seats {{model.tops}} <br> Reserve - 
+			{{input type='checkbox' checked=model.tableFull class='toggle'}}</h2>
+			<div class='table'><p>{{model.notes}}</p></div>
 		</div>
+	</div>
+		

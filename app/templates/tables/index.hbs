@@ -1,14 +1,18 @@
-Available tables
-
 <div>
-{{#each table in model}}
-	{{#link-to 'tables.table' table}}
-		<p>{{table.id}}</p>
-		{{#if table.tableFull}}
-			<img src = 'tableFull.jpeg' >
-			{{else}}
-			<img src = 'table.bmp' >
-		{{/if}}
-	{{/link-to}}
-{{/each}}
+	{{#each table in model}}
+		<div class='table'>
+			{{!-- {{#link-to 'tables.table' table}} --}}
+				{{#if table.tableFull}}
+					<img src = 'tableFull.jpg' >
+				{{else}}
+					<img src = 'tableOpen.jpg' >
+				{{/if}}
+			{{!-- {{/link-to}} --}}
+			<h2>Table {{table.id}}  <br>
+			Seats {{table.tops}} <br>
+			{{#link-to 'tables.table' table}}See Details{{/link-to}}<br>
+			Reserve this table {{input type='checkbox' checked=table.tableFull class='toggle'}}</h2>
+
+		</div>
+	{{/each}}
 </div>

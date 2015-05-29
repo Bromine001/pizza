@@ -1,3 +1,52 @@
+html {
+	font-family: 'Helvetica';
+}
+p {
+	font-size: 1.2rem;
+}
+input[type='checkbox'] {
+	-webkit-appearance:none;
+    width:24px;
+    height:24px;
+    background:white;
+    border-radius:5px;
+    border:2px solid #555;
+}
+input[type='checkbox']:checked {
+    background: red;
+}
+h2 {
+	line-height: 115%;
+}
+
+a {
+	text-decoration: none;
+	color: #222;
+}
 .table-full {
-	background-color: red;
+	background-color: lightblue;
+}
+
+.topper {
+	background-color: lightblue;
+	padding: 10px;
+
+}
+
+.table {
+	width: 37%;
+	display: inline-block;
+	
+	padding: 4%;
+	
+}
+.table-pic {
+	float: right;
+}
+.table img {
+	float: right;
+}
+.container {
+	width: 70%;
+	padding-left: 2%;
 }

@@ -16,6 +16,7 @@ Router.map(function() {
 
   this.route('partials', function() {
     this.route('-order');
+    this.route('-header');
   });
 });
 

@@ -5,4 +5,6 @@ export default Ember.Controller.extend({
 	//tableSelect: 'takeout',
 	size: ['small', 'medium', 'large', 'X-large'],
 	//sizeSelect: 'small'
+	toppings: ['Bees', 'Beans', 'Grape Jelly', 'Pepperoni', 'Chairs', 'No topping'],
+
 });

@@ -1,10 +1,11 @@
 <div>
-<h2>{{link-to 'New' 'pizzas.new'}}</h2>
+<h2>{{link-to 'Place an order' 'pizzas.new'}}</h2>
 <p>------</p>
 	{{#each pizza in model}}
-		<h4>Pizza for table {{pizza.table}}</h4>
+		<h3>Pizza for table {{pizza.table}}</h3>
 		<p>{{pizza.size}}</p>
-		<p>{{pizza.toppings}}</p>
+		<p>{{pizza.topping1}} {{pizza.topping2}}</p>
+		<p>{{pizza.topping3}} {{pizza.topping4}}</p>
 		<button {{action 'delete' pizza}}>Done!</button>
 		
 	{{/each}}
