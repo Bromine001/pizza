@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-	table: ['takeout', '1', '2', '3', '4'],
+	table: ['takeout', 'table 1', 'table 2', 'table 3', 'table 4'],
 	//tableSelect: 'takeout',
 	size: ['small', 'medium', 'large', 'X-large'],
 	//sizeSelect: 'small'

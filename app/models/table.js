@@ -4,7 +4,7 @@ export default DS.Model.extend({
   tableFull: DS.attr('boolean'),
   tops: DS.attr('string'),
   notes: DS.attr('string'),
-  pic: DS.attr('string')
+  pic: DS.attr('string'),
 
 }).reopenClass({
 	FIXTURES:

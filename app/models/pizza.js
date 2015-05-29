@@ -14,8 +14,11 @@ FIXTURES:
 		{
 			id: 1,
 			size: 'Example',
-			table: 'NONE', 
-			toppings: 'This is where pizza orders will go'
+			table: 'No one', 
+			topping1: 'This is where pizza',
+			topping2: 'orders will go',
+			topping3: 'press "done"',
+			topping4: 'to clear this example'
 		},
 	]
 });
