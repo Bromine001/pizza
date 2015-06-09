@@ -1,7 +1,7 @@
 # Pizza
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a demonstration piece built with Ember-cli. 
+It's a pretty simple app altogether, and can be visited at www.pizza.bromine001.com
 
 ## Prerequisites
 
