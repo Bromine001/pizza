@@ -2,7 +2,7 @@ import Ember from 'ember';
 import config from './config/environment';
 
 var Router = Ember.Router.extend({
-  location: config.locationType
+  location: 'hash'
 });
 
 Router.map(function() {
@@ -12,12 +12,7 @@ Router.map(function() {
   this.route('pizzas', function() {
     this.route('new');
   });
-  this.route('pizza', function() {});
-
-  this.route('partials', function() {
-    this.route('-order');
-    this.route('-header');
-  });
+ 
 });
 
 export default Router;
